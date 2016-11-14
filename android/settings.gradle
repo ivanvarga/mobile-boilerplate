@@ -1,0 +1,3 @@
+rootProject.name = 'mobileBoilerplate'
+
+include ':app'

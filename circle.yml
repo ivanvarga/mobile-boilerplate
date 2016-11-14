@@ -1,0 +1,4 @@
+dependencies:
+  pre:
+    - brew install node
+    - npm install -g react-native-cli
