@@ -1,3 +1,11 @@
 machine:
   xcode:
     version: "8.0"
+  environment:
+    GYM_CODE_SIGNING_IDENTITY: 'iPhone Distribution: Axilis d.o.o. (5FZ9X78DWN)'
+
+deployment:
+  beta_distribution:
+    branch: master
+     commands:
+       - gym
