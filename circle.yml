@@ -10,9 +10,10 @@ machine:
 dependencies:
   pre:
     - SNAPSHOT_FORCE_DELETE=1 snapshot reset_simulators
-    
+
 deployment:
   beta_distribution:
     branch: master
     commands:
-      - gym
+      - gym --verbose
+      - ipa distribute:itunesconnect -i 1176726913 --upload --verbose
