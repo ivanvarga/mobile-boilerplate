@@ -5,8 +5,9 @@
   "scripts": {
     "start": "react-native start",
     "test": "jest",
-    "ios:sim": "react-native run-ios",
-    "android:sim": "react-native run-android"
+    "ios:emu": "react-native run-ios",
+    "android:emu": "react-native run-android",
+    "android:build": "cd android && ./gradlew assembleRelease"
   },
   "dependencies": {
     "react": "15.3.2",

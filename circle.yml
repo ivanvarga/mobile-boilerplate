@@ -17,3 +17,7 @@ deployment:
     commands:
       - gym --verbose
       - ipa distribute:itunesconnect -i 1176726913 --upload --verbose
+  android: 
+    branch: master
+    commands:
+      - npm run android:build
