@@ -16,7 +16,7 @@ deployment:
     branch: master
     commands:
       - react-native bundle --dev false --platform ios --entry-file ./index.ios.js --bundle-output ./ios/main.jsbundle
-      - gym --verbose
+      - fastlane beta
       - ipa distribute:itunesconnect -i 1176726913 --upload --verbose
   android: 
     branch: master
