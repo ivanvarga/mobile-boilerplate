@@ -7,9 +7,12 @@ machine:
 #dependencies:
 #  pre:
 #   - npm install -g react-native-cli
-dependencies:
-  pre:
-    - SNAPSHOT_FORCE_DELETE=1 snapshot reset_simulators
+#dependencies:
+#  pre:
+#    - SNAPSHOT_FORCE_DELETE=1 snapshot reset_simulators
+test:
+  override:
+    - npm test
 
 deployment:
   beta_distribution:
